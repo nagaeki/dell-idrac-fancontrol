@@ -1,6 +1,6 @@
 #!/bin/bash
 
-apt update && apt install lm-sensors ipmitool wget -y
+apt update && apt install lm-sensors ipmitool -y
 sensors-detect --auto
 ipmitool raw 0x30 0x30 0x01 0x00
 
