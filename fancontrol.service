@@ -1,0 +1,8 @@
+[Unit]
+Description=Fancontrol Script for Dell iDRAC
+
+[Service]
+ExecStart=/etc/fancontrol.sh
+
+[Install]
+WantedBy=multi-user.target
