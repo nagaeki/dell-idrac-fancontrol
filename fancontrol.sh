@@ -6,6 +6,8 @@ if ! command -v sensors &>/dev/null || ! command -v ipmitool &>/dev/null; then
 	exit 1
 fi
 
+ipmitool raw 0x30 0x30 0x01 0x00
+
 CPU0_TEMP=50
 CPU1_TEMP=50
 CPU_TEMP=50
